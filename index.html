@@ -16,11 +16,14 @@
 html,body{width:100%;min-height:100vh;background:#000000}
 body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:clamp(24px,4vw,40px)}
 .logo{
-  font-family:'Geist Mono',monospace;
-  font-size:clamp(28px,6vw,72px);
-  font-weight:500;
-  color:#e6edf3;
-  letter-spacing:-0.02em;
+  display:block;
+  width:clamp(180px,32vw,360px);
+  aspect-ratio:5240/1300;
+  background-color:#e6edf3;
+  -webkit-mask:url('quantuple-wordmark.svg') no-repeat center / contain;
+          mask:url('quantuple-wordmark.svg') no-repeat center / contain;
+  text-indent:-9999px;
+  overflow:hidden;
 }
 .contact{
   font-family:'Geist Mono',monospace;
@@ -41,7 +44,7 @@ body{display:flex;flex-direction:column;align-items:center;justify-content:cente
 </style>
 </head>
 <body>
-  <div class="logo"><svg style='width: clamp(28px,6vw,72px); height: auto;' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 40'><text x='80' y='28' font-family='monospace' font-size='28' font-weight='600' fill='%23ffffff' text-anchor='middle'>Quantuple</text></svg></div>
+  <h1 class="logo">Quantuple</h1>
   <a class="contact" href="mailto:partners@quantuple.xyz">Contact</a>
 </body>
 </html>
