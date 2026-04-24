@@ -14,7 +14,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100vh;background:#000000}
-body{display:flex;align-items:center;justify-content:center;min-height:100vh}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:clamp(24px,4vw,40px)}
 .logo{
   font-family:'Geist Mono',monospace;
   font-size:clamp(28px,6vw,72px);
@@ -22,9 +22,26 @@ body{display:flex;align-items:center;justify-content:center;min-height:100vh}
   color:#e6edf3;
   letter-spacing:-0.02em;
 }
+.contact{
+  font-family:'Geist Mono',monospace;
+  font-size:clamp(12px,1.4vw,14px);
+  font-weight:500;
+  color:#e6edf3;
+  text-decoration:none;
+  padding:10px 20px;
+  border:1px solid rgba(230,237,243,0.2);
+  border-radius:6px;
+  letter-spacing:0.02em;
+  transition:border-color 0.2s ease,background 0.2s ease;
+}
+.contact:hover{
+  border-color:rgba(230,237,243,0.5);
+  background:rgba(230,237,243,0.05);
+}
 </style>
 </head>
 <body>
   <div class="logo"><svg style='width: clamp(28px,6vw,72px); height: auto;' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 40'><text x='80' y='28' font-family='monospace' font-size='28' font-weight='600' fill='%23ffffff' text-anchor='middle'>Quantuple</text></svg></div>
+  <a class="contact" href="mailto:partners@quantuple.xyz">Contact</a>
 </body>
 </html>
